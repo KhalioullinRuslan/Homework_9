@@ -4,25 +4,6 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-// void DataN(int n)
-// {
-//     if (n != 0) 
-//     {
-//         DataN(n - 1);
-//         Console.Write($" {n} ");        
-//     }
-// }
-
-// Console.WriteLine("введи число n: ");
-// int n = int.Parse(Console.ReadLine());
-// DataN(n);
-
-
-int n = InputNumbers("Введите n: ");
-int count = 2;
-PrintNumber(n, count);
-Console.Write(1);
-
 void PrintNumber(int n, int count)
 {
   if (count > n) return;
@@ -36,3 +17,8 @@ int InputNumbers(string input)
   int output = Convert.ToInt32(Console.ReadLine());
   return output;
 }
+
+int n = InputNumbers("Введите n: ");
+int count = 2;
+PrintNumber(n, count);
+Console.Write(1);
